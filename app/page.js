@@ -33,7 +33,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="w-full flex flex-col items-center relative">
+      <section id="spark-effect-zone" className="w-full flex flex-col items-center relative">
         <nav className="flex justify-between p-4 items-baseline sm:px-16 sm:py-12 w-full">
           {/* Greeting Section */}
           <div className="flex items-baseline group cursor-default gap-2 relative">
@@ -141,12 +141,27 @@ export default function Home() {
                     strokeLinejoin="round"
                     className="w-6 h-6 stroke-1"
                   >
+
                     {svg}
+                  </svg>
+                  <svg
+                    xmlns="https://www.w3.org/2000/svg"
+                    className="icon icon-tabler icon-tabler-scribble absolute hidden group-hover/social:block"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M3 15c2 3 4 4 7 4s7 -3 7 -7s-3 -7 -6 -7s-5 1.5 -5 4s2 5 6 5s8.408 -2.453 10 -5" fill="none" strokeWidth="1" strokeDasharray="0px 1px" pathLength="1" strokeDashoffset="0px"></path>
                   </svg>
                 </a>
               ))}
             </div>
-
             {/* Time Display */}
             <div className="hidden md:flex justify-center items-center gap-2">
               <p className="text-4xl font-medium">{formatTime(currentTime)}</p>
@@ -157,6 +172,139 @@ export default function Home() {
             </div>
           </div>
         </nav>
+        <div style={{
+          willChange: "transform",
+          transition: "1000ms cubic-bezier(0.03, 0.98, 0.52, 0.99)",
+          transform: "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)"
+        }}>
+          <p className="text-6xl sm:text-7xl md:text-9xl font-bold tracking-wide cursor-default leading-tight min-h-[calc(100vh-146px)] pb-20 uppercase flex flex-col gap-4 justify-center items-center select-none">
+            <span
+              className="relative flex opacity-0 hover:tracking-widest transition-all ease-in-out duration-500 cursor-crosshair home-hero-heading"
+              style={{ opacity: "1", willChange: "opacity" }}>
+              <span id="char-V" className="hover:text-blue-600 transition-colors duration-500 relative group/char">
+                N
+                <span className="absolute -top-4 sm:-top-8 left-1/2 -translate-x-1/2 text-blue-600 opacity-0 group-hover/char:opacity-100 -ml-0.5 sm:-ml-1 md:-ml-1.5 transition-all ease-in-out duration-500 cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-8 sm:w-10 h-8 sm:h-10 traingle-rotate-with-delay"
+                  >
+                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                    <path d="M12 20l7 -12h-14z"></path>
+                  </svg>
+                </span>
+              </span>
+              <span id="char-V" className="hover:text-blue-600 transition-colors duration-500 relative group/char">
+                I
+                <span className="absolute -top-4 sm:-top-8 left-1/2 -translate-x-1/2 text-blue-600 opacity-0 group-hover/char:opacity-100 -ml-0.5 sm:-ml-1 md:-ml-1.5 transition-all ease-in-out duration-500 cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-8 sm:w-10 h-8 sm:h-10 traingle-rotate-with-delay"
+                  >
+                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                    <path d="M12 20l7 -12h-14z"></path>
+                  </svg>
+                </span>
+              </span>
+              <span id="char-V" className="hover:text-blue-600 transition-colors duration-500 relative group/char">
+                K
+                <span className="absolute -top-4 sm:-top-8 left-1/2 -translate-x-1/2 text-blue-600 opacity-0 group-hover/char:opacity-100 -ml-0.5 sm:-ml-1 md:-ml-1.5 transition-all ease-in-out duration-500 cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-8 sm:w-10 h-8 sm:h-10 traingle-rotate-with-delay"
+                  >
+                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                    <path d="M12 20l7 -12h-14z"></path>
+                  </svg>
+                </span>
+              </span>
+              <span id="char-V" className="hover:text-blue-600 transition-colors duration-500 relative group/char">
+                H
+                <span className="absolute -top-4 sm:-top-8 left-1/2 -translate-x-1/2 text-blue-600 opacity-0 group-hover/char:opacity-100 -ml-0.5 sm:-ml-1 md:-ml-1.5 transition-all ease-in-out duration-500 cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-8 sm:w-10 h-8 sm:h-10 traingle-rotate-with-delay"
+                  >
+                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                    <path d="M12 20l7 -12h-14z"></path>
+                  </svg>
+                </span>
+              </span>
+              <span id="char-V" className="hover:text-blue-600 transition-colors duration-500 relative group/char">
+                I
+                <span className="absolute -top-4 sm:-top-8 left-1/2 -translate-x-1/2 text-blue-600 opacity-0 group-hover/char:opacity-100 -ml-0.5 sm:-ml-1 md:-ml-1.5 transition-all ease-in-out duration-500 cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-8 sm:w-10 h-8 sm:h-10 traingle-rotate-with-delay"
+                  >
+                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                    <path d="M12 20l7 -12h-14z"></path>
+                  </svg>
+                </span>
+              </span>
+              <span id="char-V" className="hover:text-blue-600 transition-colors duration-500 relative group/char">
+                L
+                <span className="absolute -top-4 sm:-top-8 left-1/2 -translate-x-1/2 text-blue-600 opacity-0 group-hover/char:opacity-100 -ml-0.5 sm:-ml-1 md:-ml-1.5 transition-all ease-in-out duration-500 cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-8 sm:w-10 h-8 sm:h-10 traingle-rotate-with-delay"
+                  >
+                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                    <path d="M12 20l7 -12h-14z"></path>
+                  </svg>
+                </span>
+              </span>
+            </span>
+            <span className="opacity-0 hover:tracking-widest transition-all ease-in-out duration-500 home-hero-subheading" style={{opacity: "0.6", willChange: "opacity"}}>नयन</span>
+          </p>
+        </div>
       </section>
     </>
   );
